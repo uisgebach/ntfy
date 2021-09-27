@@ -88,6 +88,7 @@ Extras
     * `Slack <https://slack.com/>`_ support requires installing as ``pip install ntfy[slack]``
     * `Slack Incoming Webhooks<https://slack.com/>`_ - simpler slack implementation that doesn't have additional dependencies
     * `Rocket.Chat <https://Rocket.Chat>`_ support requires installing as ``pip install ntfy[rocketchat]``
+    * `Discord <https://discord.com>`_ support requires installing as ``pip install ntfy[discord]``
 
 To install multiple extras, separate with commas: e.g., ``pip install ntfy[pid,emoji]``.
 
@@ -125,6 +126,8 @@ its own configuration, stored in a key of its own name. For example:
          password: "xxxx"
          mtype: "chat"
          recipient: "me@jit.si"
+    discord:
+         discord_url: "https://discord.com/api/webhooks/<webhook id>"
 
 If you want mulitple configs for the same backend type, you can specify any
 name and then specify the backend with a backend key. For example:

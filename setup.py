@@ -17,6 +17,7 @@ extra_deps = {
     'slack':['slacker'],
     'rocketchat':['rocketchat-API'],
     'matrix':['matrix_client'],
+    'discord':['dhooks'],
 }
 test_deps = ['mock', 'sleekxmpp', 'emoji', 'psutil']
 
